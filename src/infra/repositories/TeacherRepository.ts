@@ -12,11 +12,7 @@ import { ITeacherRepository } from './../../domain/interfaces/ITeacherRepository
     }
 
     public create(teacher: Teacher): Promise<Teacher> {
-        return this._prisma.teacher.create(
-            {
-                data: teacher
-            }
-        );
+        return this._prisma.teacher.create({ data: teacher });
     }
 
  }
